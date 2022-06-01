@@ -30,15 +30,16 @@ You can use the website to generate badges: https://shields.io/
 
 &nbsp;
 
-[![name](https://user-images.githubusercontent.com/73867299/171376000-5e16dded-766e-486b-b04b-941e74895bb2.jpeg)](https://youtu.be/h6m0p47jKAE)
-<h1>Set your heart ablaze!!</h1>
+<!-- [![name](https://user-images.githubusercontent.com/73867299/171376000-5e16dded-766e-486b-b04b-941e74895bb2.jpeg)](https://youtu.be/h6m0p47jKAE)
+<h1>Set your heart ablaze!!</h1> -->
+
 
 <!-- Your hits or visitors
 site: http://hits.dwyl.com or https://visitor-badge.glitch.me
 Both apis are in trouble due to the number of requests, if you know any other to register visitors, great
 -->
 <p align="center">
-  <img alt="ViewCount" src="https://views.whatilearened.today/views/github/Rickfdalton/Rickfdalton.svg" />
+  <img alt="ViewCount"  src="https://wallpapercave.com/uwp/uwp689588.gif" />
 </p>
 
 
