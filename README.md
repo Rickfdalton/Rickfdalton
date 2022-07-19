@@ -17,7 +17,7 @@ You can use the website to generate badges: https://shields.io/
 
 
 <p float="left">
-  <img width="30%"   alt="Github" src="https://cdn.dribbble.com/users/1292677/screenshots/6139167/media/fcf7fd0c619bb87706533079240915f3.gif" />
+  <img width="40%"   alt="Github" src="https://cdn.dribbble.com/users/1292677/screenshots/6139167/media/fcf7fd0c619bb87706533079240915f3.gif" />
   &nbsp;
   &nbsp;
   &nbsp;
