@@ -18,7 +18,7 @@
   &#8287;&#8287;&#8287;&#8287;&#8287;
   <a href="https://www.linkedin.com/in/jathavan-mahendrarajah-9a3596181/" alt="linkedin"><img width="32px" src="https://img.icons8.com/color/344/linkedin-circled--v2.png"/></a>
   &#8287;&#8287;&#8287;&#8287;&#8287;
-  <a href="https://img.icons8.com/bubbles/344/user-male.png"><img width="32px" alt="Dev.to" title="presonal website" src="https://img.icons8.com/bubbles/344/user-male.png"></a>
+  <a href="https://rickfdalton.github.io/portfolio/"><img width="32px" alt="Dev.to" title="presonal website" src="https://img.icons8.com/bubbles/344/user-male.png"></a>
   &#8287;&#8287;&#8287;&#8287;&#8287;
   <a href="https://www.facebook.com/jathu05/"><img width="32px" alt="fb" title="fb" src="https://img.icons8.com/bubbles/344/facebook-new.png"/></a>
   &#8287;&#8287;&#8287;&#8287;&#8287;
