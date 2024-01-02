@@ -12,13 +12,13 @@
 
 <!-- Social icons section -->
 <p align="center">
+  <a href="https://jathu.netlify.app"><img width="32px" alt="Dev.to" title="presonal website" src="https://img.icons8.com/bubbles/344/user-male.png"></a>
+  &#8287;&#8287;&#8287;&#8287;&#8287;
   <a href="https://stackoverflow.com/users/17065309/rickfdalton"><img width="32px" alt="StackOverFlow" title="StackOverflow" src="https://cdn-icons-png.flaticon.com/512/2111/2111628.png"/></a>
   &#8287;&#8287;&#8287;&#8287;&#8287;
   <a href="https://medium.com/@marshall5"><img width="32px" alt="Medium" title="Medium" src="https://img.icons8.com/color/344/medium-logo.png"/></a>
   &#8287;&#8287;&#8287;&#8287;&#8287;
   <a href="https://www.linkedin.com/in/jathavan-mahendrarajah-9a3596181/" alt="linkedin"><img width="32px" src="https://img.icons8.com/color/344/linkedin-circled--v2.png"/></a>
-  &#8287;&#8287;&#8287;&#8287;&#8287;
-  <a href="https://jathu.netlify.app"><img width="32px" alt="Dev.to" title="presonal website" src="https://img.icons8.com/bubbles/344/user-male.png"></a>
   &#8287;&#8287;&#8287;&#8287;&#8287;
   <a href="https://www.facebook.com/jathu05/"><img width="32px" alt="fb" title="fb" src="https://img.icons8.com/bubbles/344/facebook-new.png"/></a>
   &#8287;&#8287;&#8287;&#8287;&#8287;
