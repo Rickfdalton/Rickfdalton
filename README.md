@@ -59,7 +59,6 @@ jathavanm@cluster:~$ whoami
 
 </div>
 
----
 
 <div align="center">
 
@@ -69,10 +68,9 @@ jathavanm@cluster:~$ whoami
 
 </div>
 
----
-<div align="center">
+<!-- <div align="center">
   <img src="https://readme-typing-svg.vercel.app/?font=Fira+Code&weight=500&size=20&duration=3500&pause=900&color=39D353&center=true&vCenter=true&width=640&height=120&lines=Ray%20r%20%3D%20camera.getRay(u%2C%20v);if%20(scene.hit(r%2C%20rec))%20shade(rec);vec3%20dir%20%3D%20reflect(r.dir%2C%20rec.n);color%20%2B%3D%20throughput%20%2A%20radiance" alt="ray tracing code"/>
-</div>
+</div> -->
 
 
 <div align="center">
