@@ -1,0 +1,85 @@
+<svg viewBox="0 0 800 260" width="800" height="260" xmlns="http://www.w3.org/2000/svg" font-family="'Fira Code','SF Mono',Consolas,monospace">
+  <defs>
+    <!-- sphere shading: bright phosphor highlight -> deep forest core -->
+    <radialGradient id="sphere" cx="38%" cy="32%" r="75%">
+      <stop offset="0%"  stop-color="#9bffb0"/>
+      <stop offset="22%" stop-color="#39d353"/>
+      <stop offset="60%" stop-color="#1a7f37"/>
+      <stop offset="100%" stop-color="#06210f"/>
+    </radialGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%"  stop-color="#39d353" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#39d353" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="scan" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"   stop-color="#39d353" stop-opacity="0"/>
+      <stop offset="50%"  stop-color="#9bffb0" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#39d353" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- backdrop -->
+  <rect width="800" height="260" fill="#0d1117"/>
+
+  <!-- perspective floor grid -->
+  <g stroke="#1a7f37" stroke-opacity="0.35" stroke-width="1">
+    <line x1="0"   y1="210" x2="800" y2="210"/>
+    <line x1="120" y1="260" x2="300" y2="210"/>
+    <line x1="280" y1="260" x2="370" y2="210"/>
+    <line x1="460" y1="260" x2="445" y2="210"/>
+    <line x1="660" y1="260" x2="520" y2="210"/>
+    <line x1="860" y1="260" x2="600" y2="210"/>
+    <line x1="0"   y1="232" x2="800" y2="232"/>
+    <line x1="0"   y1="246" x2="800" y2="246"/>
+  </g>
+
+  <!-- camera / ray origin -->
+  <g>
+    <circle cx="70" cy="120" r="6" fill="#39d353"/>
+    <circle cx="70" cy="120" r="6" fill="none" stroke="#39d353" stroke-width="1.5">
+      <animate attributeName="r" values="6;16;6" dur="2.4s" repeatCount="indefinite"/>
+      <animate attributeName="stroke-opacity" values="0.9;0;0.9" dur="2.4s" repeatCount="indefinite"/>
+    </circle>
+    <text x="70" y="150" fill="#7ee787" font-size="11" text-anchor="middle" opacity="0.8">camera</text>
+  </g>
+
+  <!-- primary rays fanning toward the sphere (draw-on with dash offset) -->
+  <g stroke="#39d353" stroke-width="1.6" fill="none" stroke-linecap="round">
+    <line x1="70" y1="120" x2="520" y2="70"  stroke-dasharray="460" stroke-dashoffset="460" opacity="0.85">
+      <animate attributeName="stroke-dashoffset" values="460;0;0;460" keyTimes="0;0.4;0.85;1" dur="3s" repeatCount="indefinite"/>
+    </line>
+    <line x1="70" y1="120" x2="540" y2="130" stroke-dasharray="475" stroke-dashoffset="475" opacity="0.85">
+      <animate attributeName="stroke-dashoffset" values="475;0;0;475" keyTimes="0;0.4;0.85;1" dur="3s" begin="0.25s" repeatCount="indefinite"/>
+    </line>
+    <line x1="70" y1="120" x2="515" y2="185" stroke-dasharray="470" stroke-dashoffset="470" opacity="0.85">
+      <animate attributeName="stroke-dashoffset" values="470;0;0;470" keyTimes="0;0.4;0.85;1" dur="3s" begin="0.5s" repeatCount="indefinite"/>
+    </line>
+  </g>
+
+  <!-- reflected / bounce ray off the sphere down to the floor -->
+  <line x1="535" y1="120" x2="690" y2="210" stroke="#9bffb0" stroke-width="1.4" stroke-dasharray="6 5" opacity="0.7">
+    <animate attributeName="stroke-dashoffset" values="0;-22" dur="0.7s" repeatCount="indefinite"/>
+  </line>
+
+  <!-- the sphere being rendered -->
+  <circle cx="535" cy="120" r="70" fill="url(#glow)"/>
+  <circle cx="535" cy="120" r="55" fill="url(#sphere)" stroke="#39d353" stroke-opacity="0.4" stroke-width="1"/>
+  <!-- roaming specular highlight -->
+  <circle cx="515" cy="100" r="9" fill="#ffffff" opacity="0.85">
+    <animate attributeName="cx" values="515;552;520;515" dur="4s" repeatCount="indefinite"/>
+    <animate attributeName="cy" values="100;108;138;100" dur="4s" repeatCount="indefinite"/>
+    <animate attributeName="r"  values="9;5;7;9"        dur="4s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- contact shadow -->
+  <ellipse cx="545" cy="208" rx="60" ry="8" fill="#000000" opacity="0.35"/>
+
+  <!-- render scanline sweeping across the frame -->
+  <rect x="0" y="0" width="3" height="260" fill="url(#scan)" opacity="0.9">
+    <animate attributeName="x" values="60;760;60" dur="5s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- HUD label -->
+  <text x="70" y="34" fill="#39d353" font-size="13" font-weight="600">// path tracer</text>
+  <text x="70" y="52" fill="#7ee787" font-size="11" opacity="0.75">8 spp · 1 bounce · GPU</text>
+</svg>
